@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Strike&display=swap');
+
+#aug {
+  /*top left  */
+  --aug-round-tl1: initial;
+  --aug-tl1: 2px;
+
+  /* top right */
+  --aug-round-tr1: initial;
+  --aug-tr1: 2px;
+
+  /* bottom right */
+  --aug-clip-br1: initial;
+  --aug-br1: 15px;
+
+  /* bottom left */
+  --aug-round-bl1: initial;
+  --aug-bl1: 2px;
+
+  /* border */
+  /* --aug-border: initial; */
+  --aug-border-bg: rgb(255, 255, 255, 0.5);
+  --aug-border-all: 2px;
+
+  /* Inlay */
+  --aug-inlay: initial;
+  --aug-inlay-bg: rgb(255, 255, 255, 0.1);
+  --aug-inlay-opacity: 0.5;
+
+  color: #cccccc;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out 1s;
+  font-family: 'Oswald', sans-serif;
+}
+
+#aug:hover {
+  transition: all 1s;
+  --aug-border: initial;
+}
+
+#aug-1 {
+  /*top left  */
+  --aug-round-tl1: initial;
+  --aug-tl1: 2px;
+
+  /* top right */
+  --aug-round-tr1: initial;
+  --aug-tr1: 2px;
+
+  /* bottom right */
+  --aug-clip-br1: initial;
+  --aug-br1: 15px;
+
+  /* bottom left */
+  --aug-round-bl1: initial;
+  --aug-bl1: 2px;
+
+  /* border */
+  --aug-border: initial;
+  --aug-border-bg: rgba(195, 172, 0, 0.5);
+  --aug-border-all: 2px;
+
+  /* Inlay */
+  --aug-inlay: initial;
+  --aug-inlay-bg: rgba(195, 172, 0, 0.2);
+  --aug-inlay-opacity: 0.5;
+
+  color: #cccccc;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: ease-in-out 1s;
+  font-family: 'Protest Strike', sans-serif;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 300px;
+  height: 100vh;
+  background-color: #1a202c;
+  color: #ffffff;
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+.rotating-circle {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Inner elements counteracting rotation */
+.fixed-element {
+  animation: counterRotate 20s linear infinite;
+}
+
+@keyframes counterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg); /* Rotate in the opposite direction */
+  }
+}

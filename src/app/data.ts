@@ -63,7 +63,7 @@ export const navItems = [
 
 export const technologiesGroup = [
   {
-    title: 'Frontend Frameworks',
+    title: 'Frontend',
     technologies: [
       {
         name: 'NextJS',
@@ -112,7 +112,7 @@ export const technologiesGroup = [
     ],
   },
   {
-    title: 'Programming Languages',
+    title: 'Programming ',
     technologies: [
       {
         name: 'Python',
@@ -159,7 +159,7 @@ export const technologiesGroup = [
     ],
   },
   {
-    title: 'Backend Frameworks',
+    title: 'Backend ',
     technologies: [
       {
         name: 'FastAPI',
@@ -184,7 +184,7 @@ export const technologiesGroup = [
     ],
   },
   {
-    title: 'Testing Tools',
+    title: 'Testing ',
     technologies: [
       {
         name: 'Jest',
@@ -234,6 +234,9 @@ export const technologiesGroup = [
       },
     ],
   },
+];
+
+export const futureTechnologies = [
   {
     title: 'Future interest',
     technologies: [

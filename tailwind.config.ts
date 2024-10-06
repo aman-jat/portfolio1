@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundSize: {
+        'full-cover': '100% 100%',
+      },
+      backgroundPosition: {
+        'center-center': 'center center',
+      },
       colors: {
         primary: '#FF6363',
         secondary: {

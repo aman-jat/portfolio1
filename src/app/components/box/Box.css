@@ -1,0 +1,5 @@
+.rod {
+  width: 70px;
+  border-top: 2px solid #e74c3c;
+  transform: rotate(135deg) translate(0, 18px);
+}
