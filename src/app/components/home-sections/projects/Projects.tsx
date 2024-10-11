@@ -1,6 +1,9 @@
 import { projects } from '@/app/data';
 import Image from 'next/image';
 import portfolioScreenshot from '../../../../images/portfolio_screenshot.png';
+import Button from '../../button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   return (
@@ -13,7 +16,7 @@ const Projects = () => {
               key={project.id}
               className={`
                 p-8 
-                flex flex-row items-start justify-start gap-8
+                flex flex-row xs:flex-col items-strech justify-start gap-8
                 border-[1px]
                 border-[#ffffff20]
                 bg-[#ffffff05]
@@ -31,17 +34,41 @@ const Projects = () => {
               <div className='flex flex-col gap-4 justify-between'>
                 <div>
                   <h1 className='text-xl text-[#ffffffe1]'>{project.name}</h1>
-                  <p className='text-[16px] text-neutral-400'>
+                  <p className='text-base text-neutral-400'>
                     {project.description}
                   </p>
                 </div>
+
+                <div className='flex flex-row gap-8'>
+                  <div>
+                    <p className='text-sm text-neutral-400 '>Role</p>
+                    <p className='text-base text-[#ffffffe1]'>{project.role}</p>
+                  </div>
+
+                  <div>
+                    <p className='text-sm text-neutral-400'>Team Size</p>
+                    <p className='text-base text-[#ffffffe1] '>
+                      {project.teamSize}
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <p className='text-sm text-neutral-400'>
+                    Organization (Owner)
+                  </p>
+                  <p className='text-base text-[#ffffffe1] '>
+                    {project.organization}
+                  </p>
+                </div>
+
                 <div className='flex flex-row gap-4'>
-                  <div className='bg-primary py-2 px-8 rounded-lg shadow-lg '>
-                    <p className='text-lg font-medium'>View on Github</p>
-                  </div>
-                  <div className='cursor-pointer border-primary border-2 text-primary py-2 px-8 rounded-lg shadow-lg  flex flex-row items-center'>
-                    <p className='text-lg font-medium'>VISIT</p>
-                  </div>
+                  <Button variant='filled'>View on Github</Button>
+                  <Button
+                    variant='soft_filled'
+                    endIcon={<FontAwesomeIcon icon={faArrowRightLong} />}>
+                    Show more
+                  </Button>
                 </div>
               </div>
             </div>

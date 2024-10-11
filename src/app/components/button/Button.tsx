@@ -1,4 +1,16 @@
-const Button = ({ children, variant = 'text', size = 'medium' }) => {
+interface ButtonProps {
+  children: React.ReactNode;
+  variant?: 'filled' | 'text' | 'soft_filled';
+  size?: 'small' | 'medium' | 'large';
+  endIcon?: React.ReactNode;
+}
+
+const Button = ({
+  children,
+  variant = 'text',
+  size = 'medium',
+  endIcon,
+}: ButtonProps) => {
   let classes = '  ';
 
   switch (size) {
@@ -42,15 +54,15 @@ const Button = ({ children, variant = 'text', size = 'medium' }) => {
   return (
     <button
       className={`
-        
         min-w-[100px]
          ${classes} 
-        flex flex-row gap-6 
+        flex flex-row gap-2 
         items-center 
         justify-center
         transition ease-in-out duration-300  
         rounded-md`}>
-      {children}
+      <p>{children}</p>
+      {endIcon && <span>{endIcon}</span>}
     </button>
   );
 };

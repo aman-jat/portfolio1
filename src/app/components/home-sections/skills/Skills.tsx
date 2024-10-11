@@ -8,7 +8,7 @@ const Skills = () => {
       <h2 className='text-white text-3xl'>Skills</h2>
 
       {/* Technologies Group */}
-      <div className='px-4 pt-4 grid w-full grid-flow-row  md:grid-cols-1 lg:grid-cols-5   gap-4'>
+      <div className='px-4 xs:px-0 pt-4 grid w-full grid-flow-row  xs:grid-cols-1 lg:grid-cols-5   gap-4'>
         {technologiesGroup.map(group => {
           return (
             <div
@@ -17,12 +17,12 @@ const Skills = () => {
               <h1 className='uppercase text-xl text-white capita'>
                 {group.title}
               </h1>
-              <div className='flex flex-col w-full '>
+              <div className='grid xs:grid-cols-2 xs:gap-2 sm:grid-cols-1 w-full '>
                 {group.technologies.map(tech => {
                   return (
                     <button
                       key={tech.name}
-                      className='p-2 text-[#ffffff90] hover:text-[#ffffff] flex flex-row gap-6 items-center transition ease-in-out duration-300  hover:bg-secondary-200 hover:bg-opacity-10 rounded-lg '>
+                      className='xs:px-1 p-2 text-[#ffffff90]  hover:text-[#ffffff] flex flex-row xs:gap-2 sm:gap-6 items-center transition ease-in-out duration-300  hover:bg-secondary-200 hover:bg-opacity-10 rounded-lg '>
                       <Image
                         src={tech.icon} // replace with the correct path
                         alt='Profile'
@@ -45,11 +45,11 @@ const Skills = () => {
           return (
             <div
               key={group.title}
-              className='p-8  flex items-center  bg-secondary-200 bg-opacity-5 rounded-lg gap-4 items-start justify-start   '>
+              className='xs:px-2 sm:p-8  flex xs:flex-col xs:bg-none sm:bg-secondary-200 bg-opacity-5 rounded-lg gap-4 items-start justify-start   '>
               <h1 className='uppercase text-xl text-white capita'>
                 {group.title}
               </h1>
-              <div className='flex  gap-4'>
+              <div className='flex xs:w-full xs:flex-col sm:flex-row gap-4'>
                 {group.technologies.map(tech => {
                   return (
                     <Button key={tech.name} variant='soft_filled'>

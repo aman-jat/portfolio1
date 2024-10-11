@@ -6,23 +6,21 @@ import aman from '../../../aman.jpg';
 
 const Intro = () => {
   return (
-    <div className=' h-screen flex flex-row items-center justify-between  gap-20'>
+    <div className=' sm:h-screen sm:mt-[-120px] xs:p-4 flex xs:flex-col flex-row  items-center justify-between  gap-20'>
       {/* PHOTO - LEFT-SECTION */}
       <div className=''>
         <div
+          style={{ width: `100px` }}
           className={`w-[400px]  rounded-full overflow-hidden  border-opacity-50 shadow-lg`}>
-          <Image
-            src={aman} // replace with the correct path
-            alt='Profile'
-          />
+          <Image src={aman} width={100} alt='Profile' />
         </div>
       </div>
 
       {/*  RIGHT-SECTION */}
-      <div className='flex gap-2 flex-col items-start justify-start text-gray-300'>
-        <p className='text-7xl ml-[-6px]'>{`Hello, I'm AMAN JAT`}</p>
+      <div className='flex gap-2 xs:text-center flex-col xs:items-center items-start justify-start text-gray-300'>
+        <p className='xs:text-2xl text-5xl sm:ml-[-6px]'>{`Hello, I'm AMAN JAT`}</p>
         {/* <p className='text-lg font-medium text-gray-200'> */}
-        <div className='flex flex-col gap-[2px] my-6'>
+        <div className='flex flex-col gap-[2px] my-6 text-base'>
           <span>
             Are you looking for someone who can code the front-end, back-end,
             and deploy your website?
@@ -35,7 +33,7 @@ const Intro = () => {
             experiences, and troubleshoot issues before they become roadblocks?
           </span>
 
-          <span className='mt-4'>
+          <span className='xs:hidden mt-4'>
             Look no further! With over 3 years of full-stack development
             experience, I specialize in building solutions that not only work
             but excel under pressure. From crafting beautiful, responsive user

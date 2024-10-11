@@ -11,12 +11,12 @@ export default function App() {
   return (
     <>
       {/* body */}
-      <div className='max-w-[1400px] py-8 px-8 flex flex-col items-center justify-center w-full '>
+      <div className='max-w-[1400px] xs:px-6 py-8 px-8 flex flex-col items-center justify-center w-full '>
         {/* intro */}
         <Intro />
-        <div className='w-full flex flex-col items-start gap-12'>
+        <div className='w-full flex flex-col gap-12'>
           <Skills />
-          <Projects />
+          {/* <Projects /> */}
         </div>
       </div>
     </>

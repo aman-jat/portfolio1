@@ -39,26 +39,30 @@ import gcp from '../images/gcp.png';
 
 export const navItems = [
   {
+    id: 100,
+    name: 'Skills',
+    to: '/skills',
+  },
+  {
     id: 1,
     name: 'Projects',
     to: '/projects',
   },
-  {
-    id: 2,
-    name: 'Services',
-    to: '/services',
-  },
-  {
-    id: 3,
-
-    name: 'Feedback',
-    to: '/feedback',
-  },
-  {
-    id: 4,
-    name: 'Contacts',
-    to: '/contacts',
-  },
+  // {
+  //   id: 2,
+  //   name: 'Services',
+  //   to: '/services',
+  // },
+  // {
+  //   id: 3,
+  //   name: 'Feedback',
+  //   to: '/feedback',
+  // },
+  // {
+  //   id: 4,
+  //   name: 'Contacts',
+  //   to: '/contacts',
+  // },
 ];
 
 export const technologiesGroup = [
@@ -263,6 +267,9 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna auctor, aliquet nunc id, tincidunt libero.',
     viewProject: 'View Project',
+    role: 'Full Stack Developer | Owner',
+    organization: 'Self',
+    teamSize: 1,
     download: 'Download',
     link: 'http://localhost:3000/',
   },
@@ -272,6 +279,9 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna auctor, aliquet nunc id, tincidunt libero.',
     viewProject: 'View Project',
+    role: 'Tech Lead',
+    teamSize: 5,
+    organization: 'Techdome Solution Private Limited',
     download: 'Download',
     link: 'https://dev-app.catalystai.work/',
   },
@@ -281,6 +291,9 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna auctor, aliquet nunc id, tincidunt libero.',
     viewProject: 'View Project',
+    role: 'Full Stack Developer',
+    organization: 'Sleeksky Technology Pvt Ltd | Feenix AI',
+    teamSize: 2,
     download: 'Download',
     link: 'https://www.feenix.ai/',
   },
@@ -290,6 +303,9 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna auctor, aliquet nunc id, tincidunt libero.',
     viewProject: 'View Project',
+    role: 'Frontend Developer',
+    organization: 'Sleeksky Technology Pvt Ltd | Exxat',
+    teamSize: 2,
     download: 'Download',
     link: 'https://www.exxat.com',
   },
